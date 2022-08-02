@@ -5,6 +5,3 @@ build/*
 
 # NPM dist
 dist/*
-
-# Vendor files
-source/vendor/*
