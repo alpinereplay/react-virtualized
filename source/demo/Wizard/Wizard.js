@@ -1,16 +1,16 @@
 import clsx from 'clsx';
-import CodeMirror from 'react-codemirror';
+// import CodeMirror from 'react-codemirror';
 import * as React from 'react';
 import {ContentBox, ContentBoxHeader} from '../ContentBox';
-import generate from './Generator';
+// import generate from './Generator';
 import styles from './Wizard.css';
 
-require('codemirror/mode/jsx/jsx');
+// require('codemirror/mode/jsx/jsx');
 
-const codeMirrorOptions = {
-  mode: 'jsx',
-  theme: 'dracula',
-};
+// const codeMirrorOptions = {
+//   mode: 'jsx',
+//   theme: 'dracula',
+// };
 
 // @TODO Clean up this class; it's pretty hacky.
 export default class Wizard extends React.Component {
@@ -37,7 +37,7 @@ export default class Wizard extends React.Component {
 
   render() {
     const state = this._sanitizeState();
-    const markup = generate(state);
+    // const markup = generate(state);
 
     const {
       cellsHaveKnownHeight,
@@ -164,11 +164,6 @@ export default class Wizard extends React.Component {
         </ContentBox>
         <ContentBox>
           <ContentBoxHeader text="Suggested Starting Point" />
-          <CodeMirror
-            options={codeMirrorOptions}
-            value={markup}
-            key={this.state.key}
-          />
         </ContentBox>
       </div>
     );
