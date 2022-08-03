@@ -28,4 +28,3 @@ function defaultOverscanIndicesGetter({ cellCount, overscanCellsCount, scrollDir
     }
 }
 exports.default = defaultOverscanIndicesGetter;
-//# sourceMappingURL=accessibilityOverscanIndicesGetter.js.map

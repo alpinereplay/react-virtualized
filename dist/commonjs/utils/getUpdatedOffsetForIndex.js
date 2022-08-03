@@ -27,4 +27,3 @@ function getUpdatedOffsetForIndex({ align = "auto", cellOffset, cellSize, contai
     }
 }
 exports.default = getUpdatedOffsetForIndex;
-//# sourceMappingURL=getUpdatedOffsetForIndex.js.map

@@ -25,4 +25,3 @@ exports.SortIndicator = SortIndicator_1.default;
 const Table_1 = __importDefault(require("./Table"));
 exports.Table = Table_1.default;
 exports.default = Table_1.default;
-//# sourceMappingURL=index.js.map

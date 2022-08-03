@@ -40,4 +40,3 @@ function calculateSizeAndPositionData({ cellCount, cellSizeAndPositionGetter, se
     };
 }
 exports.default = calculateSizeAndPositionData;
-//# sourceMappingURL=calculateSizeAndPositionData.js.map

@@ -14,4 +14,3 @@ function defaultCellDataGetter({ dataKey, rowData }) {
     }
 }
 exports.default = defaultCellDataGetter;
-//# sourceMappingURL=defaultCellDataGetter.js.map

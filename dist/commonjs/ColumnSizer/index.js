@@ -7,4 +7,3 @@ exports.ColumnSizer = void 0;
 const ColumnSizer_1 = __importDefault(require("./ColumnSizer"));
 exports.ColumnSizer = ColumnSizer_1.default;
 exports.default = ColumnSizer_1.default;
-//# sourceMappingURL=index.js.map

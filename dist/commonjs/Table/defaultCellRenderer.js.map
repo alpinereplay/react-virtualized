@@ -1,1 +1,0 @@
-{"version":3,"file":"defaultCellRenderer.js","sourceRoot":"","sources":["../../../src/Table/defaultCellRenderer.ts"],"names":[],"mappings":";;AACA;;;GAGG;AAEH,SAAwB,mBAAmB,CAAC,EAC1C,QAAQ,EACW;IACnB,IAAI,QAAQ,IAAI,IAAI,EAAE;QACpB,OAAO,EAAE,CAAC;KACX;SAAM;QACL,OAAO,MAAM,CAAC,QAAQ,CAAC,CAAC;KACzB;AACH,CAAC;AARD,sCAQC"}

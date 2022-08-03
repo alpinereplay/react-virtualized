@@ -315,4 +315,3 @@ function identity(value) {
 }
 function noop() { }
 exports.default = Masonry;
-//# sourceMappingURL=Masonry.js.map

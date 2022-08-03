@@ -219,4 +219,3 @@ function defaultCellGroupRenderer({ cellCache, cellRenderer, cellSizeAndPosition
     })
         .filter((renderedCell) => !!renderedCell);
 }
-//# sourceMappingURL=Collection.js.map

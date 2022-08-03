@@ -3,4 +3,3 @@ jest.mock('dom-helpers/scrollbarSize', () => {
         return 20;
     };
 });
-//# sourceMappingURL=jest-setup.js.map

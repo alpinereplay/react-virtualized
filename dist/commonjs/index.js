@@ -40,4 +40,3 @@ Object.defineProperty(exports, "SortDirection", { enumerable: true, get: functio
 Object.defineProperty(exports, "SortIndicator", { enumerable: true, get: function () { return Table_1.SortIndicator; } });
 var WindowScroller_1 = require("./WindowScroller");
 Object.defineProperty(exports, "WindowScroller", { enumerable: true, get: function () { return WindowScroller_1.WindowScroller; } });
-//# sourceMappingURL=index.js.map

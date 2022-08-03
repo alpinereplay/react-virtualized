@@ -62,4 +62,3 @@ function unregisterScrollListener(component, element) {
     }
 }
 exports.unregisterScrollListener = unregisterScrollListener;
-//# sourceMappingURL=onScroll.js.map

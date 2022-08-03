@@ -15,4 +15,3 @@ function calculateSizeAndPositionDataAndUpdateScrollOffset({ cellCount, cellSize
     }
 }
 exports.default = calculateSizeAndPositionDataAndUpdateScrollOffset;
-//# sourceMappingURL=calculateSizeAndPositionDataAndUpdateScrollOffset.js.map

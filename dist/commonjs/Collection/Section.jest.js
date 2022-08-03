@@ -54,4 +54,3 @@ describe('Section', () => {
         expect(section.toString()).toEqual('25,50 200x100');
     });
 });
-//# sourceMappingURL=Section.jest.js.map

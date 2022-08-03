@@ -28,4 +28,3 @@ function defaultHeaderRowRenderer({ className, columns, style }) {
     return React.createElement("div", { className: className, role: "row", style: style }, columns);
 }
 exports.default = defaultHeaderRowRenderer;
-//# sourceMappingURL=defaultHeaderRowRenderer.js.map

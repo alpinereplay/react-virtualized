@@ -28,4 +28,3 @@ function initCellMetadata({ cellCount, size }) {
     return cellMetadata;
 }
 exports.default = initCellMetadata;
-//# sourceMappingURL=initCellMetadata.js.map

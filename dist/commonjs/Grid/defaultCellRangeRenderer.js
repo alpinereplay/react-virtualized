@@ -129,4 +129,3 @@ function warnAboutMissingStyle(parent, renderedCell) {
         }
     }
 }
-//# sourceMappingURL=defaultCellRangeRenderer.js.map

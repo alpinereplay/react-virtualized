@@ -475,4 +475,3 @@ class CollectionView extends React.PureComponent {
     };
 }
 exports.default = CollectionView;
-//# sourceMappingURL=CollectionView.js.map

@@ -48,4 +48,3 @@ exports.default = SortIndicator;
 SortIndicator.propTypes = {
     sortDirection: prop_types_1.default.oneOf([SortDirection_1.default.ASC, SortDirection_1.default.DESC]),
 };
-//# sourceMappingURL=SortIndicator.js.map

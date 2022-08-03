@@ -132,4 +132,3 @@ describe("SectionManager", () => {
         })).toEqual([7, 8, 9]);
     });
 });
-//# sourceMappingURL=SectionManager.jest.js.map

@@ -129,4 +129,3 @@ class ScalingCellSizeAndPositionManager {
     }
 }
 exports.default = ScalingCellSizeAndPositionManager;
-//# sourceMappingURL=ScalingCellSizeAndPositionManager.js.map

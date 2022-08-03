@@ -202,4 +202,3 @@ function createDetectElementResize(nonce, hostWindow) {
     };
 }
 exports.default = createDetectElementResize;
-//# sourceMappingURL=detectElementResize.js.map

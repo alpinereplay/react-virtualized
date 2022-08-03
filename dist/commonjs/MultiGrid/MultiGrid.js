@@ -625,4 +625,3 @@ class MultiGrid extends React.PureComponent {
     };
 }
 exports.default = MultiGrid;
-//# sourceMappingURL=MultiGrid.js.map

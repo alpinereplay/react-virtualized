@@ -144,4 +144,3 @@ describe("updateScrollIndexHelper", () => {
         })).toEqual(false);
     });
 });
-//# sourceMappingURL=updateScrollIndexHelper.jest.js.map

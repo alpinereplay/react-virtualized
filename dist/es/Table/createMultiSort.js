@@ -66,4 +66,3 @@ function createMultiSort(sortCallback, { defaultSortBy = {}, defaultSortDirectio
     };
 }
 exports.default = createMultiSort;
-//# sourceMappingURL=createMultiSort.js.map

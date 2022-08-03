@@ -77,4 +77,3 @@ function defaultRowRenderer({ className, columns, index, key, onRowClick, onRowD
     return (React.createElement("div", { ...a11yProps, className: className, key: key, role: "row", style: style }, columns));
 }
 exports.default = defaultRowRenderer;
-//# sourceMappingURL=defaultRowRenderer.js.map

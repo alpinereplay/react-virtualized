@@ -106,4 +106,3 @@ describe("overscanIndicesGetter", () => {
         });
     });
 });
-//# sourceMappingURL=accessibilityOverscanIndicesGetter.jest.js.map

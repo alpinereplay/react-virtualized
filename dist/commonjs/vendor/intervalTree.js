@@ -408,4 +408,3 @@ class IntervalTree {
     }
 }
 exports.IntervalTree = IntervalTree;
-//# sourceMappingURL=intervalTree.js.map

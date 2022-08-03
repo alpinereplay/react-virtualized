@@ -67,4 +67,3 @@ describe("getUpdatedOffsetForIndex", () => {
         })).toEqual(30);
     });
 });
-//# sourceMappingURL=getUpdatedOffsetForIndex.jest.js.map

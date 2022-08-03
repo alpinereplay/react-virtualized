@@ -38,4 +38,3 @@ function createCellPositioner({ cellMeasurerCache, columnCount, columnWidth, spa
     return cellPositioner;
 }
 exports.default = createCellPositioner;
-//# sourceMappingURL=createCellPositioner.js.map

@@ -29,4 +29,3 @@ function updateScrollIndexHelper({ cellSize, cellSizeAndPositionManager, previou
     }
 }
 exports.default = updateScrollIndexHelper;
-//# sourceMappingURL=updateScrollIndexHelper.js.map

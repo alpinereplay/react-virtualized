@@ -198,4 +198,3 @@ class WindowScroller extends React.PureComponent {
     };
 }
 exports.default = WindowScroller;
-//# sourceMappingURL=WindowScroller.js.map

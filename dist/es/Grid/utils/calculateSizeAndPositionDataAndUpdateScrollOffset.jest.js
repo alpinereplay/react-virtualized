@@ -61,4 +61,3 @@ describe("calculateSizeAndPositionDataAndUpdateScrollOffset", () => {
         expect(computeMetadataCallbackCalls.length).toEqual(0);
     });
 });
-//# sourceMappingURL=calculateSizeAndPositionDataAndUpdateScrollOffset.jest.js.map

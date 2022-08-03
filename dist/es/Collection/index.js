@@ -7,4 +7,3 @@ exports.Collection = void 0;
 const Collection_1 = __importDefault(require("./Collection"));
 exports.Collection = Collection_1.default;
 exports.default = Collection_1.default;
-//# sourceMappingURL=index.js.map

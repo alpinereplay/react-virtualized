@@ -33,4 +33,3 @@ const cancel = win.cancelAnimationFrame ||
     };
 exports.raf = request;
 exports.caf = cancel;
-//# sourceMappingURL=animationFrame.js.map

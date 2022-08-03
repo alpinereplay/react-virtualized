@@ -202,4 +202,3 @@ describe("ScalingCellSizeAndPositionManager", () => {
         });
     });
 });
-//# sourceMappingURL=ScalingCellSizeAndPositionManager.jest.js.map

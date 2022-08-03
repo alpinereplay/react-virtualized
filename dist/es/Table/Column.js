@@ -96,4 +96,3 @@ class Column extends React.Component {
     };
 }
 exports.default = Column;
-//# sourceMappingURL=Column.js.map

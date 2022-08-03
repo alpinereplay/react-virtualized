@@ -13,4 +13,3 @@ function defaultCellRenderer({ cellData }) {
     }
 }
 exports.default = defaultCellRenderer;
-//# sourceMappingURL=defaultCellRenderer.js.map

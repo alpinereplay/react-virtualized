@@ -28,4 +28,3 @@ const WindowScroller_1 = __importStar(require("./WindowScroller"));
 exports.WindowScroller = WindowScroller_1.default;
 Object.defineProperty(exports, "IS_SCROLLING_TIMEOUT", { enumerable: true, get: function () { return WindowScroller_1.IS_SCROLLING_TIMEOUT; } });
 exports.default = WindowScroller_1.default;
-//# sourceMappingURL=index.js.map

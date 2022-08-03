@@ -98,4 +98,3 @@ class ColumnSizer extends React.PureComponent {
     }
 }
 exports.default = ColumnSizer;
-//# sourceMappingURL=ColumnSizer.js.map

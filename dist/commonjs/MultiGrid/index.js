@@ -7,4 +7,3 @@ exports.MultiGrid = void 0;
 const MultiGrid_1 = __importDefault(require("./MultiGrid"));
 exports.MultiGrid = MultiGrid_1.default;
 exports.default = MultiGrid_1.default;
-//# sourceMappingURL=index.js.map

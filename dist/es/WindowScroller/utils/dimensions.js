@@ -72,4 +72,3 @@ function getScrollOffset(element) {
     }
 }
 exports.getScrollOffset = getScrollOffset;
-//# sourceMappingURL=dimensions.js.map

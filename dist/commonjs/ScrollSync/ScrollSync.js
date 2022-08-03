@@ -77,4 +77,3 @@ class ScrollSync extends React.PureComponent {
     }
 }
 exports.default = ScrollSync;
-//# sourceMappingURL=ScrollSync.js.map

@@ -24,4 +24,3 @@ function getCellMetadata() {
     });
 }
 exports.getCellMetadata = getCellMetadata;
-//# sourceMappingURL=TestHelper.js.map

@@ -7,4 +7,3 @@ exports.InfiniteLoader = void 0;
 const InfiniteLoader_1 = __importDefault(require("./InfiniteLoader"));
 exports.InfiniteLoader = InfiniteLoader_1.default;
 exports.default = InfiniteLoader_1.default;
-//# sourceMappingURL=index.js.map

@@ -13,4 +13,3 @@ const SortDirection = {
     DESC: 'DESC'
 };
 exports.default = SortDirection;
-//# sourceMappingURL=SortDirection.js.map

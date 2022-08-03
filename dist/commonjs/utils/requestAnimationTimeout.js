@@ -30,4 +30,3 @@ const requestAnimationTimeout = (callback, delay) => {
     return frame;
 };
 exports.requestAnimationTimeout = requestAnimationTimeout;
-//# sourceMappingURL=requestAnimationTimeout.js.map

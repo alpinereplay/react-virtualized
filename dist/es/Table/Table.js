@@ -585,4 +585,3 @@ class Table extends React.PureComponent {
     }
 }
 exports.default = Table;
-//# sourceMappingURL=Table.js.map

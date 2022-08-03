@@ -158,4 +158,3 @@ class List extends React.PureComponent {
     };
 }
 exports.default = List;
-//# sourceMappingURL=List.js.map

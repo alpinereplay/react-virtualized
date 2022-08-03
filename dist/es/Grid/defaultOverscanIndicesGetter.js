@@ -24,4 +24,3 @@ function defaultOverscanIndicesGetter({ cellCount, overscanCellsCount, scrollDir
     }
 }
 exports.default = defaultOverscanIndicesGetter;
-//# sourceMappingURL=defaultOverscanIndicesGetter.js.map

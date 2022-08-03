@@ -30,4 +30,3 @@ describe("calculateSizeAndPositionData", () => {
         })).toThrow();
     });
 });
-//# sourceMappingURL=calculateSizeAndPositionData.jest.js.map

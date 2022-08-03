@@ -1,1 +1,0 @@
-{"version":3,"file":"defaultCellDataGetter.js","sourceRoot":"","sources":["../../../src/Table/defaultCellDataGetter.ts"],"names":[],"mappings":";;AACA;;;;GAIG;AAEH,SAAwB,qBAAqB,CAAC,EAC5C,OAAO,EACP,OAAO,EACc;IACrB,IAAI,OAAO,OAAO,CAAC,GAAG,KAAK,UAAU,EAAE;QACrC,OAAO,OAAO,CAAC,GAAG,CAAC,OAAO,CAAC,CAAC;KAC7B;SAAM;QACL,OAAO,OAAO,CAAC,OAAO,CAAC,CAAC;KACzB;AACH,CAAC;AATD,wCASC"}

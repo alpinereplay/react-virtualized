@@ -14,4 +14,3 @@ const getMaxElementSize = () => {
     return DEFAULT_MAX_ELEMENT_SIZE;
 };
 exports.getMaxElementSize = getMaxElementSize;
-//# sourceMappingURL=maxElementSize.js.map

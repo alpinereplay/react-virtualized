@@ -80,4 +80,3 @@ class SectionManager {
     }
 }
 exports.default = SectionManager;
-//# sourceMappingURL=SectionManager.js.map

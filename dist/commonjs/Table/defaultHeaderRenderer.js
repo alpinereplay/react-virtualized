@@ -42,4 +42,3 @@ function defaultHeaderRenderer({ dataKey, label, sortBy, sortDirection, }) {
     return children;
 }
 exports.default = defaultHeaderRenderer;
-//# sourceMappingURL=defaultHeaderRenderer.js.map
