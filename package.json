@@ -17,9 +17,7 @@
         "clean": "rimraf dist",
         "test": "jest",
         "test:jest": "jest --no-watchman --runInBand",
-        "test:coverage": "jest --no-watchman --maxWorkers 2 --coverage && codecov",
-        "install": "echo 'react-virtualized installing'",
-        "prepare": "echo 'react-virtualized preparing' && npm run build"
+        "test:coverage": "jest --no-watchman --maxWorkers 2 --coverage && codecov"
     },
     "husky": {
         "hooks": {
@@ -27,8 +25,7 @@
         }
     },
     "files": [
-        "dist",
-        "styles.css"
+        "dist"
     ],
     "repository": {
         "type": "git",
