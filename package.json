@@ -10,26 +10,13 @@
     "jsnext:main": "dist/es/index.js",
     "license": "MIT",
     "scripts": {
-        "build": "tsc",
-        "build:types": "flow-copy-source --ignore \"**/*.{jest,e2e,ssr,example}.js\" source/WindowScroller dist/es/WindowScroller && flow-copy-source --ignore \"**/*.{jest,e2e,ssr,example}.js\" source/AutoSizer dist/es/AutoSizer",
-        "clean": "yarn run clean:commonjs && yarn run clean:demo && yarn run clean:es && yarn run clean:umd",
-        "clean:commonjs": "rimraf dist/commonjs",
-        "clean:demo": "rimraf build",
-        "clean:es": "rimraf dist/es",
-        "clean:umd": "rimraf dist/umd",
-        "deploy": "gh-pages -d build",
-        "lint": "eslint 'source/**/*.js'",
-        "typecheck": "flow check",
-        "prettier": "prettier --write '{playground,source,docs}/**/*.{js,md}'",
-        "prettier:diff": "prettier --list-different '{playground,source,docs}/**/*.{js,md}'",
-        "postpublish": "yarn run deploy",
-        "prepublishOnly": "yarn run build",
-        "start": "cross-env NODE_ENV=development webpack-dev-server --hot --config webpack.config.dev.js",
+        "build": "npm run clean && npm run build:typescript && npm run build:css",
+        "build:typescript": "tsc",
+        "build:css": "postcss src/styles.css -o dist/styles.css",
+        "clean": "rimraf dist",
         "test": "jest",
         "test:jest": "jest --no-watchman --runInBand",
-        "test:coverage": "jest --no-watchman --maxWorkers 2 --coverage && codecov",
-        "watch": "watch 'clear && yarn run test -s' source",
-        "watch:jest": "jest --no-watchman --watch"
+        "test:coverage": "jest --no-watchman --maxWorkers 2 --coverage && codecov"
     },
     "husky": {
         "hooks": {
@@ -68,8 +55,11 @@
         "@types/jest": "^28.1.6",
         "@types/react": "^18.0.15",
         "@types/react-dom": "^18.0.6",
+        "postcss": "^8.4.14",
+        "postcss-cli": "^10.0.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
+        "rimraf": "^3.0.2",
         "ts-jest": "^28.0.7",
         "typescript": "^4.7.4"
     },

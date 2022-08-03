@@ -1,24 +1,32 @@
-import * as React from "react";
-import SortIndicator from "./SortIndicator";
-import type { HeaderRendererParams } from "./types";
+import * as React from "react"
+import SortIndicator from "./SortIndicator"
+import type { HeaderRendererParams } from "./types"
 /**
  * Default table header renderer.
  */
 
 export default function defaultHeaderRenderer({
-  dataKey,
-  label,
-  sortBy,
-  sortDirection
+    dataKey,
+    label,
+    sortBy,
+    sortDirection,
 }: HeaderRendererParams) {
-  const showSortIndicator = sortBy === dataKey;
-  const children = [<span className="ReactVirtualized__Table__headerTruncatedText" key="label" title={typeof label === 'string' ? label : null}>
-      {label}
-    </span>];
+    const showSortIndicator = sortBy === dataKey
+    const children = [
+        <span
+            className="ReactVirtualized__Table__headerTruncatedText"
+            key="label"
+            title={typeof label === "string" ? label : undefined}
+        >
+            {label}
+        </span>,
+    ]
 
-  if (showSortIndicator) {
-    children.push(<SortIndicator key="SortIndicator" sortDirection={sortDirection} />);
-  }
+    if (showSortIndicator) {
+        children.push(
+            <SortIndicator key="SortIndicator" sortDirection={sortDirection} />
+        )
+    }
 
-  return children;
+    return children
 }

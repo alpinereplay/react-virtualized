@@ -1,4 +1,4 @@
-import type { Index, SizeAndPositionInfo } from "./types";
+import type { Index, SizeAndPositionInfo } from "./types"
 /**
  * A section of the Window.
  * Window Sections are used to group nearby cells.
@@ -7,39 +7,38 @@ import type { Index, SizeAndPositionInfo } from "./types";
  */
 
 export default class Section {
-  constructor({
-    height,
-    width,
-    x,
-    y
-  }: SizeAndPositionInfo) {
-    this.height = height;
-    this.width = width;
-    this.x = x;
-    this.y = y;
-    this._indexMap = {};
-    this._indices = [];
-  }
+    public height: number
+    public width: number
+    public x: number
+    public y: number
+    private _indexMap: any
+    private _indices: any[]
 
-  /** Add a cell to this section. */
-  addCellIndex({
-    index
-  }: Index) {
-    if (!this._indexMap[index]) {
-      this._indexMap[index] = true;
-
-      this._indices.push(index);
+    constructor({ height, width, x, y }: SizeAndPositionInfo) {
+        this.height = height
+        this.width = width
+        this.x = x
+        this.y = y
+        this._indexMap = {}
+        this._indices = []
     }
-  }
 
-  /** Get all cell indices that have been added to this section. */
-  getCellIndices(): Array<number> {
-    return this._indices;
-  }
+    /** Add a cell to this section. */
+    addCellIndex({ index }: Index) {
+        if (!this._indexMap[index]) {
+            this._indexMap[index] = true
 
-  /** Intended for debugger/test purposes only */
-  toString() {
-    return `${this.x},${this.y} ${this.width}x${this.height}`;
-  }
+            this._indices.push(index)
+        }
+    }
 
+    /** Get all cell indices that have been added to this section. */
+    getCellIndices(): Array<number> {
+        return this._indices
+    }
+
+    /** Intended for debugger/test purposes only */
+    toString() {
+        return `${this.x},${this.y} ${this.width}x${this.height}`
+    }
 }

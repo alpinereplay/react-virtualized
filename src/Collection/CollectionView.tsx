@@ -146,6 +146,8 @@ class CollectionView extends React.PureComponent {
     private _scrollbarSizeMeasured: boolean
     private _scrollingContainer: any
     private _disablePointerEventsTimeoutId: any
+    private _lastRenderedCellCount: any
+    private _lastRenderedCellLayoutManager: any
 
     constructor(...args: any[]) {
         super(args)
@@ -324,7 +326,7 @@ class CollectionView extends React.PureComponent {
             style,
             verticalOverscanSize,
             width,
-        } = this.props
+        } = this.props as any
         const { isScrolling, scrollLeft, scrollTop } = this.state
 
         // Memoization reset
@@ -362,7 +364,7 @@ class CollectionView extends React.PureComponent {
                       y: top,
                   })
                 : []
-        const collectionStyle = {
+        const collectionStyle: any = {
             boxSizing: "border-box",
             direction: "ltr",
             height: autoHeight ? "auto" : height,
@@ -387,10 +389,11 @@ class CollectionView extends React.PureComponent {
             totalWidth + verticalScrollBarSize <= width ? "hidden" : "auto"
         collectionStyle.overflowY =
             totalHeight + horizontalScrollBarSize <= height ? "hidden" : "auto"
+        let ariaLabel: string = (this.props as any)["aria-label"] ?? ""
         return (
             <div
                 ref={this._setScrollingContainerRef}
-                aria-label={this.props["aria-label"]}
+                aria-label={ariaLabel}
                 className="ReactVirtualized__Collection"
                 id={id}
                 onScroll={this._onScroll}
@@ -398,22 +401,24 @@ class CollectionView extends React.PureComponent {
                 style={{ ...collectionStyle, ...style }}
                 tabIndex={0}
             >
-                {cellCount > 0 && (
-                    <div
-                        className="ReactVirtualized__Collection__innerScrollContainer"
-                        style={{
-                            height: totalHeight,
-                            maxHeight: totalHeight,
-                            maxWidth: totalWidth,
-                            overflow: "hidden",
-                            pointerEvents: isScrolling ? "none" : "",
-                            width: totalWidth,
-                        }}
-                    >
-                        {childrenToDisplay}
-                    </div>
-                )}
-                {cellCount === 0 && noContentRenderer()}
+                <>
+                    {cellCount > 0 && (
+                        <div
+                            className="ReactVirtualized__Collection__innerScrollContainer"
+                            style={{
+                                height: totalHeight,
+                                maxHeight: totalHeight,
+                                maxWidth: totalWidth,
+                                overflow: "hidden",
+                                pointerEvents: isScrolling ? "none" : "auto",
+                                width: totalWidth,
+                            }}
+                        >
+                            {childrenToDisplay}
+                        </div>
+                    )}
+                    {cellCount === 0 && noContentRenderer()}
+                </>
             </div>
         )
     }
@@ -431,7 +436,7 @@ class CollectionView extends React.PureComponent {
         }
 
         this._disablePointerEventsTimeoutId = setTimeout(() => {
-            const { isScrollingChange } = this.props
+            const { isScrollingChange } = this.props as any
             isScrollingChange(false)
             this._disablePointerEventsTimeoutId = null
             this.setState({
@@ -441,7 +446,7 @@ class CollectionView extends React.PureComponent {
     }
 
     _invokeOnSectionRenderedHelper = () => {
-        const { cellLayoutManager, onSectionRendered } = this.props
+        const { cellLayoutManager, onSectionRendered } = this.props as any
 
         this._onSectionRenderedMemoizer({
             callback: onSectionRendered,
@@ -456,10 +461,10 @@ class CollectionView extends React.PureComponent {
         scrollTop,
         totalHeight,
         totalWidth,
-    }) {
+    }: any) {
         this._onScrollMemoizer({
-            callback: ({ scrollLeft, scrollTop }) => {
-                const { height, onScroll, width } = this.props
+            callback: ({ scrollLeft, scrollTop }: any) => {
+                const { height, onScroll, width } = this.props as any
                 onScroll({
                     clientHeight: height,
                     clientWidth: width,
@@ -476,12 +481,12 @@ class CollectionView extends React.PureComponent {
         })
     }
 
-    _setScrollingContainerRef = (ref) => {
+    _setScrollingContainerRef = (ref: any) => {
         this._scrollingContainer = ref
     }
 
-    _setScrollPosition({ scrollLeft, scrollTop }) {
-        const newState = {
+    _setScrollPosition({ scrollLeft, scrollTop }: any) {
+        const newState: any = {
             scrollPositionChangeReason:
                 SCROLL_POSITION_CHANGE_REASONS.REQUESTED,
         }
@@ -509,7 +514,7 @@ class CollectionView extends React.PureComponent {
             scrollToAlignment,
             scrollToCell,
             width,
-        } = this.props
+        } = this.props as any
         const { scrollLeft, scrollTop } = this.state
 
         if (scrollToCell >= 0) {
@@ -530,7 +535,7 @@ class CollectionView extends React.PureComponent {
             }
         }
     }
-    _onScroll = (event) => {
+    _onScroll = (event: any) => {
         // In certain edge-cases React dispatches an onScroll event with an invalid target.scrollLeft / target.scrollTop.
         // This invalid event can be detected by comparing event.target to this component's scrollable DOM element.
         // See issue #404 for more information.
@@ -545,8 +550,8 @@ class CollectionView extends React.PureComponent {
         // Gradually converging on a scrollTop that is within the bounds of the new, smaller height.
         // This causes a series of rapid renders that is slow for long lists.
         // We can avoid that by doing some simple bounds checking to ensure that scrollTop never exceeds the total height.
-        const { cellLayoutManager, height, isScrollingChange, width } =
-            this.props
+        const { cellLayoutManager, height, isScrollingChange, width } = this
+            .props as any
         const scrollbarSize = this._scrollbarSize
         const { height: totalHeight, width: totalWidth } =
             cellLayoutManager.getTotalSize()
@@ -603,5 +608,4 @@ class CollectionView extends React.PureComponent {
     }
 }
 
-polyfill(CollectionView)
 export default CollectionView
