@@ -10,8 +10,9 @@
     "jsnext:main": "dist/es/index.js",
     "license": "MIT",
     "scripts": {
-        "build": "npm run clean && npm run build:typescript && npm run build:css",
-        "build:typescript": "tsc",
+        "build": "npm run clean && npm run build:es && npm run build:commonjs && npm run build:css",
+        "build:es": "tsc --target esnext --module commonjs --outDir dist/es",
+        "build:commonjs": "tsc --target esnext --module commonjs --outDir dist/commonjs",
         "build:css": "postcss src/styles.css -o dist/styles.css",
         "clean": "rimraf dist",
         "test": "jest",
